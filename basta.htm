@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FIRST MOVE</title>
+
+    <style>
+        #By {
+            position: absolute;
+            left: 64px;
+            top: 370px;
+            width: 210px;
+            height: 210px;
+        }
+
+        #Bn {
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            width: 210px;
+            height: 210px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var flag = 1;
+
+        function f1() {
+            var Name = prompt("Just wanna make sure that it's you, what's your name again?'");
+
+            if (Name == "" || Name == null) {
+                alert("Please enter your name.");
+            } else {
+                alert("Hi " + Name + ", you're very pretty!'.");
+                alert("In case you don't know who I am... Guess what... I know that you already know me.");
+                alert("It's up to you if you want to DM me in my messenger, but I'd prefer that you do or you'll receive bad luck!");
+            }
+        }
+
+        function f() {
+            var Bn = document.getElementById("Bn");
+
+            if (flag == 1) {
+                Bn.style.top = "400px";
+                Bn.style.left = "300px";
+                flag = 2;
+            } else if (flag == 2) {
+                Bn.style.top = "400px";
+                Bn.style.left = "50px";
+                flag = 3;
+            } else if (flag == 3) {
+                Bn.style.top = "370px";
+                Bn.style.left = "166px";
+                flag = 1;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1> Hey! Are you curious of my identity?</h1>
+        <a href="file:///C:/Users/USER/Desktop/fallback/coding/basta.htm" style="text-decoration: none; color: inherit;">
+    <img src="https://c.tenor.com/sZPWbZj_QI8AAAAi/kakaotalk-emoticon.gif" height="200">
+    <h1 style="#">Do you wanna know who I am?</h1>
+    <div id="By">
+        <input type="button" value="YES NA YES FOR U" onclick="f1()">
+    </div>
+    <div id="Bn">
+        <input type="button" value="NO" onmouseover="f()">
+    </div>
+
+</body>
+
+</html>
+</html>
